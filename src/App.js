@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
 
-  
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
