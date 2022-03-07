@@ -30,15 +30,15 @@ a:hover{
   font-size: 18px;
 }
 section{
-  position: relative;
-  background-color: #fee6dc;
-  /* background-image: url('/bg.png'); */
+  /* position: relative; */
+  /* background-color: #fee6dc; */
+  background-image: url('./assets/bg/main-bg.png');
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   min-height: 675px;
   min-width: 100vw;
 }
-section::before{
+/* section::before{
   content: 'Portfolio';
   position: absolute;
   top: 240px;
@@ -52,7 +52,16 @@ section::before{
   -o-transform: rotate(-90deg) translateY(-50%);
   transform: rotate(-90deg) translateY(-50%);
 
+} */
+.pic-wrap, .intro-wrap{
+  position: relative;
+  flex: 0 0 50%; 
+  min-height: 600px;
+  width: 500px;
+  padding: 5vw 3vw;
+  vertical-align: middle;
 }
+
 .my-pic{
   width:  24.7vw;
   height: 32.55vw;
@@ -71,31 +80,27 @@ height: 32.55vw;
 width:  24.7vw;
 object-fit: contain;
 object-position: right;
-position: absolute;
-top: 5.2vw;
-left: 9.44vw;
-z-index: 9;
+/* margin-top: 5.2vw;*/
+margin-left: 6.44vw; 
 }
 .tape{
 width: 8.48vw;
 position: absolute;
-bottom: 2.6vw;
-left: 22.19vw;
+bottom: 1.6vw;
+left: 12.19vw;
 z-index: 11;
 }
-.intro-wrap{
-  position: absolute;
-  right: 345px;
-  top: 250px;
-}
+
 .intro{
   padding-left: 13px;
+  padding-right: 5vw;
   border-left: 5px solid #d39660;
+  margin-top: 8rem;
 }
 .my-name{
   font-size: 3.5rem;
   position: relative;
-  /* z-index: 222; */
+  z-index: 222;
 }
 .hire-btn{
   margin: 15px;
@@ -105,7 +110,7 @@ z-index: 11;
   background-color: #d39660;
 }
 .intro p{
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 /* footer */
 footer a i{
@@ -125,5 +130,75 @@ footer a i:hover{
 .foot-top{
   min-height: 100px;
   padding: 13px 0;
-  background-color: #f7c5ac;
+  background-color: #EDD4BF;
+}
+.foot-bottom{
+  min-height: 38px;
+  color: rgba(0, 0, 0, 0.212);
+  background-color: #fffaf7;
+}
+/* About me section */
+#about{
+  background-image: url('./assets/bg/about-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.section-title{
+  margin: auto;
+  font-size: 2.5rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+.section-title::before{
+  content: "";
+  width: 80px;
+  height: 13px;
+  position: absolute;
+  background-color: #d39660;
+  opacity: 0.6;
+  left: -3px;
+  bottom: 4px;
+  z-index:-1;
+}
+.section-pic{
+  position: relative;
+  flex: 0 0 50%; 
+  min-height: 600px;
+  width: 500px;
+  padding: 3vw 5vw;
+  vertical-align: middle;
+}
+.section-content{
+  flex: 0 0 50%;
+  min-height: 600px;
+  padding: 5vw 6vw;
+  text-align: center;
+}
+.section-content p{
+  font-size: 1.1rem;
+}
+
+.pic2{
+  width:  26.7vw;
+  height: 32.55vw;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 11.7vw;
+  right: 20.6vw;
+  border: 10px #f5ece3 solid;
+  z-index: 10;
+  
+}
+.pic-bg2{
+/* background-image: url('/bg2.jpg'); */
+background-color: #6b705c80;
+height: 32.55vw;
+width:  24.7vw;
+object-fit: contain;
+object-position: right;
+margin-top: 5.2vw;
+margin-left: 6.44vw; 
 }

@@ -1,26 +1,26 @@
 import React from "react";
 import photo from "../../assets/photos/mee.jpg"
+import icon from "../../assets/icons/tape1.png"
 
 const Home = ()=>{
     return(
-        <section >
-            <div className="d-flex justify-content-around flex-wrap">
-                <div className="pic-wrap">
+        <section>
+            <div className="row">
+                <div className="col pic-wrap">
                     <div className="pic-bg"></div>
                     <img className="my-pic" src={photo} alt="my picture"/>
-                    <img className="tape" src="/tape1.png" alt=""/>
+                    <img className="tape" src={icon} alt=""/>
                 </div>
-                <div className="intro-wrap">
+                <div className="col intro-wrap">
                     <div className="intro">
-                        <h1>Hi! I'm <br/> 
+                        <h1>Hi! my name is <br/> 
                             <span className="my-name"> Khaoula Jabour </span> 
                         </h1>
-                        <p>I'm a full stack react developer</p>
-                        <button className="hire-btn">Resume</button>
-                    </div>     
+                        <p>I'm a full stack react developer  based in <br/> Morrisville, NC</p> <button className="hire-btn">Resume</button>
+                    </div>                 
                 </div>           
             </div>
-      </section>
+        </section>
     )
 }
 
