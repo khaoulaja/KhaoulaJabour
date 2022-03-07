@@ -29,6 +29,9 @@ a:hover{
 .nav-item{
   font-size: 18px;
 }
+.nav-link{
+  cursor: pointer;
+}
 section{
   /* position: relative; */
   /* background-color: #fee6dc; */
