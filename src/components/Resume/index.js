@@ -80,7 +80,7 @@ const Resume = ()=>{
         </div> 
         <div className="row">
 
-        <a href="resume/resume.pdf" download><i class="fas fa-download"></i> Download Resume</a>
+        <a href="resume/resume.pdf" download className="mt-2"><i class="fas fa-download"></i> Download Resume</a>
         </div>    
       </section>
     )

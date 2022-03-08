@@ -108,10 +108,10 @@ z-index: 11;
   padding: 4px 10px;
   font-size: 20px;
   border: none;
-  color: #e2b692;
+  background-color: rgba(211, 150, 96, 0.6);
 }
 .hire-btn:hover{
-  color: #d39660;
+  background-color: rgba(211, 150, 96, 0.8);
   transition: 0.5s;
 }
 .intro p{
@@ -260,4 +260,12 @@ margin-left: 6.44vw;
   position: absolute;
   top: -20px;
   left: -10px;
+}
+/* contact */
+.contact-form{
+  margin: auto;
+  width: 50%;
+}
+.error-text{
+  color: rgb(255, 60, 0);
 }

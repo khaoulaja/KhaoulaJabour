@@ -16,7 +16,7 @@ const Home = ()=>{
                         <h1>Hi! my name is <br/> 
                             <span className="my-name"> Khaoula Jabour </span> 
                         </h1>
-                        <p>I'm a full stack react developer <br/>  based in Morrisville, NC</p>
+                        <p>I'm a full stack developer <br/>  based in Morrisville, NC</p>
                     </div>                 
                 </div>           
             </div>
