@@ -17,6 +17,7 @@ header{
 }
 a{
   color: rgba(0,0,0,.55);
+  cursor: pointer;
 }
 a:hover{
   color: #000;
@@ -29,9 +30,6 @@ a:hover{
 .nav-item{
   font-size: 18px;
 }
-.nav-link{
-  cursor: pointer;
-}
 section{
   /* position: relative; */
   /* background-color: #fee6dc; */
@@ -39,7 +37,7 @@ section{
   background-size: cover;
   background-position: bottom;
   min-height: 675px;
-  min-width: 100vw;
+  padding: 60px;
 }
 /* section::before{
   content: 'Portfolio';
@@ -110,7 +108,11 @@ z-index: 11;
   padding: 4px 10px;
   font-size: 20px;
   border: none;
-  background-color: #d39660;
+  color: #e2b692;
+}
+.hire-btn:hover{
+  color: #d39660;
+  transition: 0.5s;
 }
 .intro p{
   font-size: 1.6rem;
@@ -165,6 +167,18 @@ footer a i:hover{
   bottom: 4px;
   z-index:-1;
 }
+.section-sub-title{
+  margin: auto;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-decoration-color: #d39660;
+  padding: 0 5px;
+  width: fit-content;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
 .section-pic{
   position: relative;
   flex: 0 0 50%; 
@@ -184,19 +198,21 @@ footer a i:hover{
 }
 
 .pic2{
-  width:  26.7vw;
-  height: 32.55vw;
+  width:  27vw;
+  height: 35.55vw;
   object-fit: cover;
   object-position: center;
-  position: absolute;
+  /* position: absolute;
   top: 11.7vw;
-  right: 20.6vw;
+  right: 20.6vw; */
+  margin-top: 7.2vw;
+  box-shadow: 70px -33px rgba(211, 150, 96, 0.6);
   border: 10px #f5ece3 solid;
   z-index: 10;
   
 }
 .pic-bg2{
-/* background-image: url('/bg2.jpg'); */
+/* background-image: url('./assets/bg/bg2.jpg'); */
 background-color: #6b705c80;
 height: 32.55vw;
 width:  24.7vw;
@@ -204,4 +220,44 @@ object-fit: contain;
 object-position: right;
 margin-top: 5.2vw;
 margin-left: 6.44vw; 
+}
+/* resume */
+.resume-section{
+  background-image: url('./assets/bg/resume-bg.png');
+}
+.sub-section{
+  padding: 50px;
+  background-color: rgba(237,212,191,0.2);
+}
+.sub-section:nth-of-type(2){
+  background-color: rgba(237,212,191,0.4)
+}   
+.skill-div{
+  border-left: 2px solid #d39660;
+  padding-top: 20px;
+  
+}
+.skill-div:first-of-type{
+  border-left: none;
+  border-right: 2px solid #d39660;
+  padding-top: 20px;
+  
+}
+.school-section{
+  margin: 1rem 3rem;
+  padding: 0.5rem;
+  border-left: 2px dashed rgba(0, 0, 0, 0.075);
+  position: relative;
+}
+.school-section::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-color: #e6d5ca;
+  border: 3px solid #d4c5ba;
+  border-radius: 40px;
+  position: absolute;
+  top: -20px;
+  left: -10px;
 }

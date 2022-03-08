@@ -18,7 +18,7 @@ const About = ()=>{
                 </div>                 
             </div> 
             <div className="col section-pic">
-              <div className="pic-bg2"></div>
+              {/* <div className="pic-bg2"></div> */}
                 <img className="pic2" src={photo} alt="my picture"/>
           </div>          
         </div>

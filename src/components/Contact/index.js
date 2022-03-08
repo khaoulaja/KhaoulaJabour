@@ -26,7 +26,6 @@ function Contact (){
             
             SetFormState({...formState, [e.target.name]: e.target.value})
         }
-
         
     }
 
