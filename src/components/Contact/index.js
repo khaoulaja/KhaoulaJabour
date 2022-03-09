@@ -55,7 +55,7 @@ function Contact (){
                         <p className="mt-1 error-text">{errorMessage}.</p>
                     </div>
                 )}
-                <button className="hire-btn" type="submit" >Submit</button>
+                <button className="btn hire-btn" type="submit" >Submit</button>
             </form>
           </div>
         </section>

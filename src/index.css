@@ -64,31 +64,43 @@ section{
 }
 
 .my-pic{
-  width:  24.7vw;
-  height: 32.55vw;
+  width:  380px;
+  height: 500px;
   object-fit: cover;
   object-position: center;
-  position: absolute;
-  top: 120px;
-  left: 16.6vw;
+  position: relative;
+  top: 7px;
+  left: 7.6vw;
   border: 10px #f5ece3 solid;
   z-index: 10;
   
 }
-.pic-bg{
+.pic-wrap::before{
+  content: " ";
+  background-image: url('./assets/bg/bg-before.jpg');
+  height:500px;
+  width:  400px;
+  object-fit: contain;
+  object-position: right; 
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 0;
+}
+/* .pic-bg{
 background-image: url('./assets/bg/bg-before.jpg');
 height: 32.55vw;
 width:  24.7vw;
 object-fit: contain;
 object-position: right;
-/* margin-top: 5.2vw;*/
+/* margin-top: 5.2vw;**
 margin-left: 6.44vw; 
-}
+} */
 .tape{
 width: 8.48vw;
 position: absolute;
-bottom: 1.6vw;
-left: 12.19vw;
+bottom: 70px;
+left: 95px;
 z-index: 11;
 }
 
@@ -190,7 +202,7 @@ footer a i:hover{
 .section-content{
   flex: 0 0 50%;
   min-height: 600px;
-  padding: 5vw 6vw;
+  padding: 50px;
   text-align: center;
 }
 .section-content p{
@@ -198,28 +210,15 @@ footer a i:hover{
 }
 
 .pic2{
-  width:  27vw;
-  height: 35.55vw;
+  width:  400px;
+  height: 540px;
   object-fit: cover;
   object-position: center;
-  /* position: absolute;
-  top: 11.7vw;
-  right: 20.6vw; */
   margin-top: 7.2vw;
   box-shadow: 70px -33px rgba(211, 150, 96, 0.6);
   border: 10px #f5ece3 solid;
   z-index: 10;
   
-}
-.pic-bg2{
-/* background-image: url('./assets/bg/bg2.jpg'); */
-background-color: #6b705c80;
-height: 32.55vw;
-width:  24.7vw;
-object-fit: contain;
-object-position: right;
-margin-top: 5.2vw;
-margin-left: 6.44vw; 
 }
 /* resume */
 .resume-section{
@@ -270,10 +269,172 @@ margin-left: 6.44vw;
   color: rgb(255, 60, 0);
 }
 /* portfolio */
-.img-top{
+.portfolio-section{
+  background-image: url('./assets/bg/portfolio-bg.png');
+}
+.card-img-top{
   min-height: 210px;
   object-fit: cover;
 }
 .card-text{
-  min-height: 115px;
+  height: 115px;
+  /* overflow:scroll; */
+}
+
+@media screen and (max-width:1200px){
+  .my-pic{
+    width: 350px;
+    height: 470px;
+  }
+  .my-name{
+    font-size: 2.8rem;
+  }
+  .intro p{
+    font-size: 1.5rem;
+  }
+  .section-content{
+    padding: 0;
+  }
+  .hire-btn{
+    font-size: 18px;
+  }
+  .contact-form{
+    width: 65%;
+  }
+  .skill-div{
+    min-width: 50%;
+  }
+  
+}
+@media screen and (max-width:980px) {
+  section{
+    padding: 40px;
+    min-height: auto;
+  }
+  .my-pic{
+    width: 250px;
+    height: 340px;
+  }
+  .pic-wrap::before{
+    width: 250px;
+    height: 300px;
+  }
+  .pic-wrap{
+    min-height: auto;
+  }
+  .intro-wrap{
+    width: 300px;
+    padding: 20px;
+    min-height: auto;
+  }
+  .tape{
+    bottom: 50px;
+  }
+  .my-name{
+    font-size: 2.4rem;
+  }
+  .intro{
+    padding-right: 0;
+  }
+  .intro p{
+    font-size: 20px;
+  }
+  .section-pic{
+    padding: 10px;
+  }
+  .pic2{
+    width: 260px;
+  }
+  .section-content p{
+    font-size: 1rem;
+  }
+  .skill-div .row .col-6{
+    width: 100%;
+    padding: 3px;
+  }
+
+}
+@media screen and (max-width:768px) {
+  section{
+    min-height: fit-content;
+    padding: 20px;
+  }
+  .my-pic{
+    left: 2.6vw;
+  }
+  .tape{
+    left: 30px;
+  }
+  .my-name{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .section-pic{
+    width: 100%;
+    min-height: auto;
+    margin: auto;
+    padding: 0;
+  }
+  .section-content{
+    padding: 20px;
+  }
+  .pic2{
+    width: 300px;
+    height: 320px;
+    margin-top: auto;
+    box-shadow: 0 0 60px rgba(211, 150, 96, 0.8);
+  }
+  .skill-div .row .col-6{
+    width: fit-content;
+    margin: auto;
+    padding: 3px;
+  }
+  .skill-div, .skill-div:first-of-type{
+    border: none;
+    border-left: 2px solid #d39660;
+    border-right: 2px solid #d39660;
+  }
+  .sub-section{
+    padding: 30px;
+  }
+  .work-section{
+    padding: 40px;
+  }
+
+}
+@media screen and (max-width:600px) {
+  .pic-wrap{
+    width: 100%;
+    margin: auto;
+  }
+ .pic-wrap::before{
+   content: none;
+ }
+ .intro-wrap{
+   margin: auto;
+   flex: 1 1 100%;
+ }
+ .intro{
+    margin-top: auto;
+    text-align: center;
+    border: none;
+    padding: 0;
+    width: 100%;
+ }
+ .my-name{
+   font-size: 1.8rem;
+ }
+ .intro p{
+   font-size: 1rem;
+ }
+ .section-title{
+   font-size: 1.6rem;
+ }
+
+}
+@media screen and (max-width:500px) {
+  .contact-form{
+    width: 90%;
+  }
+  
 }

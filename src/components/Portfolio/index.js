@@ -5,14 +5,14 @@ const projects=[
     {
         name: "Game Corner",
         pic: "game-corner",
-        description: "It allows the user to keep track of its collection of games. The user can sign up to start building their list of favorite games that they would like to play again, games that they hate and would never want to see again, or games that they want to buy and play later.",
+        description: "It allows the user to keep track of its collection of games. The user can sign up to start building their list of games (favorite, hated, want to buy ...).",
         link: "https://afternoon-reef-79835.herokuapp.com/",
         repo: "https://github.com/kerbunker/game-collection"
     },
     {
         name: "Travel Buddy",
         pic: "travel-buddy",
-        description: "It allows users to interact with selected countries to gain information about their languages, regions, currency, etc. It also has the translation of the most used phrases into an audio recording, as well as a gallery of the most famous cities and sight-seeings.",
+        description: "It allows users to interact with selected countries and gain general information about it. It also has the translation of the most used phrases, as well as a gallery of the most famous cities and sight-seeings.",
         link: "https://khaoulaja.github.io/Travel-Buddy/",
         repo: "https://github.com/khaoulaja/Travel-Buddy"
     },
@@ -54,7 +54,7 @@ const Portfolio = ()=>{
                 <h5>My recent projects</h5>
                 <div className="row justify-content-around align-items-stretch">
                      {projects.map((project)=>(
-                    <div className="col-sm-12 col-md-6 col-lg-4 p-3 align-self-stretch" key={project.name}>
+                    <div className="col-sm-12 col-md-6 col-xl-4 p-3 align-self-stretch" key={project.name}>
                         <Project project={project}/>                        
                     </div>
                     ))}   

@@ -13,7 +13,7 @@ const Resume = ()=>{
               <div className="col-sm-10 col-md-5 skill-div">
                 <h3 className="section-sub-title">Front End</h3>
                 <div className="row p-2">
-                  <div className="col">
+                  <div className="col-6">
                     <ul>
                       <li>HTML</li>
                       <li>Bootstrap</li>
@@ -21,7 +21,7 @@ const Resume = ()=>{
                       <li>Web APIs</li>
                     </ul>
                   </div>
-                  <div className="col">
+                  <div className="col-6">
                     <ul>
                       <li>CSS</li>
                       <li>Foundation</li>
@@ -80,7 +80,7 @@ const Resume = ()=>{
         </div> 
         <div className="row">
 
-        <a href="resume/resume.pdf" download className="mt-2"><i className="fas fa-download"></i> Download Resume</a>
+        <a href="resume/resume.pdf" download="khaoula-resume" className="mt-2"><i className="fas fa-download"></i> Download Resume</a>
         </div>    
       </section>
     )
