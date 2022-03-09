@@ -269,3 +269,11 @@ margin-left: 6.44vw;
 .error-text{
   color: rgb(255, 60, 0);
 }
+/* portfolio */
+.img-top{
+  min-height: 210px;
+  object-fit: cover;
+}
+.card-text{
+  min-height: 115px;
+}
