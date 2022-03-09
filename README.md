@@ -9,7 +9,7 @@ In this portfolio, you will:
 * Be able to connect with me
 * Be able to download my resume
 
-<br/><br/>
+<br/>
 
  ![Homepage](screencapture.png)
 
@@ -22,7 +22,7 @@ In this portfolio, you will:
 * Responsive Design
 
 ## Website
-
+https://khaoulaja.github.io/react-portfolio
 
 ## Contribution
 Made with ❤️ by **Khaoula Jabour**
