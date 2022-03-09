@@ -23,9 +23,24 @@ a:hover{
   color: #000;
   transition: 0.5s;
 }
+.navbar-toggler:focus{
+  box-shadow: none;
+}
 .logo{
-  /* width: 150px; */
-  font-family: 'Parisienne', cursive;
+  font-size: 2rem;
+  position: relative;
+  z-index: 3;
+}
+.logo::after{
+  content: "";
+  width: 227px;
+  height: 13px;
+  position: absolute;
+  background-color: #d39660;
+  opacity: 0.6;
+  left: -3px;
+  bottom: 4px;
+  z-index:-1;
 }
 .nav-item{
   font-size: 18px;
@@ -39,21 +54,7 @@ section{
   min-height: 675px;
   padding: 60px;
 }
-/* section::before{
-  content: 'Portfolio';
-  position: absolute;
-  top: 240px;
-  right: -330px;
-  font-size: 150px;
-  color: #f7c5ac36;
-  z-index: 2;
-  -webkit-transform: rotate(-90deg) translateY(-50%);
-  -moz-transform: rotate(-90deg) translateY(-50%);
-  -ms-transform: rotate(-90deg) translateY(-50%);
-  -o-transform: rotate(-90deg) translateY(-50%);
-  transform: rotate(-90deg) translateY(-50%);
 
-} */
 .pic-wrap, .intro-wrap{
   position: relative;
   flex: 0 0 50%; 
@@ -87,15 +88,7 @@ section{
   left: 20px;
   z-index: 0;
 }
-/* .pic-bg{
-background-image: url('./assets/bg/bg-before.jpg');
-height: 32.55vw;
-width:  24.7vw;
-object-fit: contain;
-object-position: right;
-/* margin-top: 5.2vw;**
-margin-left: 6.44vw; 
-} */
+
 .tape{
 width: 8.48vw;
 position: absolute;
@@ -196,7 +189,7 @@ footer a i:hover{
   flex: 0 0 50%; 
   min-height: 600px;
   width: 500px;
-  padding: 3vw 5vw;
+  padding: 1vw;
   vertical-align: middle;
 }
 .section-content{
@@ -343,7 +336,7 @@ footer a i:hover{
     padding: 10px;
   }
   .pic2{
-    width: 260px;
+    width: 300px;
   }
   .section-content p{
     font-size: 1rem;
