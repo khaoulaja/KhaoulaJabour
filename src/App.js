@@ -9,36 +9,31 @@ import './App.css';
 import Resume from './components/Resume';
 
 function App() {
-  const [portfolioSelected, setPortfolioSelected] = useState(false)
-  const [contactSelected, setContactSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
+
+  const [currentPage, setCurrentPage] = useState('About');
+
+  //check to see what is the value of currentPage
+  const renderPage =() =>{
+    if (currentPage === 'About') {
+      return <About/>
+    }
+    if (currentPage ==='Portfolio') {
+      return <Portfolio/>
+    }
+    if (currentPage === 'Contact') {
+      return <Contact/>
+    }
+    return <Resume/>
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
 
   return (
     <div className='container-fluid'>
-      <Header
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      portfolioSelected={portfolioSelected}
-      setPortfolioSelected={setPortfolioSelected}
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}
-
-      ></Header>
       
-
-      <main>
-        {contactSelected ? <Contact/>
-        : portfolioSelected ? <Portfolio></Portfolio>
-        : resumeSelected ? <Resume/>
-        :
-        <>
-        <Home/>
-        <About/>
-      </>}
-      </main>
-
-
+      <Header currentPage={currentPage} handlePageChange={handlePageChange}></Header>
+      {renderPage()}
       <Footer/>
 
     </div>

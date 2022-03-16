@@ -206,6 +206,7 @@ footer a i:hover{
   width: 500px;
   padding: 1vw;
   vertical-align: middle;
+  text-align: center;
 }
 .section-content{
   flex: 0 0 50%;

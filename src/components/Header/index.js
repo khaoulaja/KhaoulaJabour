@@ -1,15 +1,8 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-const Header = (props) =>{
-    const {
-        contactSelected,
-        setContactSelected,
-        portfolioSelected,
-        setPortfolioSelected,
-        resumeSelected,
-        setResumeSelected
-    }=props;
+const Header = ({currentPage, handlePageChange}) =>{
+
     return (
         <header>
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -18,12 +11,8 @@ const Header = (props) =>{
                   <h1 className="logo">Khaoula Jabour</h1>
               </a>
              <Navigation 
-             contactSelected={contactSelected}
-             setContactSelected={setContactSelected}
-             portfolioSelected={portfolioSelected}
-             setPortfolioSelected={setPortfolioSelected}
-             resumeSelected={resumeSelected}
-             setResumeSelected={setResumeSelected}
+             currentPage={currentPage}
+             handlePageChange={handlePageChange}
              />
             </div>
           </nav>

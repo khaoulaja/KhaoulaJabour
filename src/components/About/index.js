@@ -1,8 +1,11 @@
 import React from 'react'
 import photo from '../../assets/photos/pic2.jpg'
+import Home from '../Home';
 
 const About = ()=>{
     return(
+      <>
+        <Home/>
         <section id="about">
         <div className="row">
              <div className="col-sm-12 col-md-6 section-txt">
@@ -22,6 +25,7 @@ const About = ()=>{
           </div>          
         </div>
       </section>
+      </>
     )
 }
 
