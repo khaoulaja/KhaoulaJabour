@@ -7,7 +7,7 @@ const Header = ({currentPage, handlePageChange}) =>{
         <header>
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid align-items-baseline">
-              <a className="navbar-brand" href="/">
+              <a className="navbar-brand" href="/react-portfolio">
                   <h1 className="logo">Khaoula Jabour</h1>
               </a>
              <Navigation 
