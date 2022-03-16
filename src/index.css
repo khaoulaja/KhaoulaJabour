@@ -6,9 +6,22 @@
 body{
   font-family: 'Josefin Sans', sans-serif;
   color: black;
+  overflow-x:hidden;
+  padding: 0;
+  margin: 0;
 }
 h1, h2 ,h3, h4, h5, h6{
   font-family: 'Marcellus', serif;
+}
+.container, 
+.container-fluid, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl, 
+.container-xxl {
+  padding-left: 0;
+  padding-right: 0;
 }
 header{
   width: 100%;
@@ -23,12 +36,14 @@ a:hover{
   color: #000;
   transition: 0.5s;
 }
+body div .container
 .navbar-toggler:focus{
   box-shadow: none;
 }
 .logo{
   font-size: 2rem;
   position: relative;
+  margin-left: 20px;
   z-index: 3;
 }
 .logo::after{

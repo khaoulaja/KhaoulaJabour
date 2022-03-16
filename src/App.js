@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container-fluid'>
       <Header
       contactSelected={contactSelected}
       setContactSelected={setContactSelected}
