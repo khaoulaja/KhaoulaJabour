@@ -3,6 +3,13 @@ import Project from "../Project";
 
 const projects=[
     {
+        name: "CarDash",
+        pic: "car-dash",
+        description: "CarDash is an application that allows the users to keep track of all repairs and services needed for their vehicles.",
+        link: "https://github.com/khaoulaja/car-dash/",
+        repo: "https://limitless-reaches-44145.herokuapp.com/"
+    },
+    {
         name: "Game Corner",
         pic: "game-corner",
         description: "It allows the user to keep track of its collection of games. The user can sign up to start building their list of games (favorite, hated, want to buy ...).",
@@ -29,13 +36,6 @@ const projects=[
         description: "It's a CMS-style blog site similar to a Wordpress site, where developers can publish their articles, blog posts and comment on other developers posts as well.",
         link: "https://tech-park-99.herokuapp.com/login",
         repo: "https://github.com/khaoulaja/TechPark"
-    },
-    {
-        name: "Workday Scheduler",
-        pic: "work-day",
-        description: "It is a website where employees can create their schedules. They can add important events to a daily planner to manage time effectively.",
-        link: "https://khaoulaja.github.io/work-day-scheduler/",
-        repo: "https://github.com/khaoulaja/work-day-scheduler"
     },
     {
         name: "Code Quiz",
