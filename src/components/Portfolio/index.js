@@ -6,8 +6,8 @@ const projects=[
         name: "CarDash",
         pic: "car-dash",
         description: "CarDash is an application that allows the users to keep track of all repairs and services needed for their vehicles.",
-        link: "https://github.com/khaoulaja/car-dash/",
-        repo: "https://limitless-reaches-44145.herokuapp.com/"
+        link: "https://limitless-reaches-44145.herokuapp.com/",
+        repo: "https://github.com/khaoulaja/car-dash/"
     },
     {
         name: "Game Corner",
