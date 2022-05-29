@@ -6,7 +6,7 @@ const Footer = ()=>{
         <footer>
         <div className="row text-center foot-top">
           <div className="col-12">
-            <h3>Get In Touch</h3>
+            {/* <h3>Get In Touch</h3> */}
             <a href="https://github.com/khaoulaja" target="_blank">
               <i className="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/khaoula-jabour4/" target="_blank">

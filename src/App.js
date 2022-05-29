@@ -10,10 +10,13 @@ import Resume from './components/Resume';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   //check to see what is the value of currentPage
   const renderPage =() =>{
+    if (currentPage === 'Home') {
+      return <Home/>
+    }
     if (currentPage === 'About') {
       return <About/>
     }
@@ -31,9 +34,13 @@ function App() {
 
   return (
     <div className='container-fluid'>
-      
+      <div className='row'>
+      <div class="col-md-12 col-xl-2 sticky-bar">
       <Header currentPage={currentPage} handlePageChange={handlePageChange}></Header>
+      </div>
+      <div class="col-md-12 col-xl-10">
       {renderPage()}
+      </div></div>
       <Footer/>
 
     </div>

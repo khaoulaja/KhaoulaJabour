@@ -54,7 +54,7 @@ const Portfolio = ()=>{
                 <h5>My recent projects</h5>
                 <div className="row justify-content-around align-items-stretch">
                      {projects.map((project)=>(
-                    <div className="col-sm-12 col-md-6 col-xl-4 p-3 align-self-stretch" key={project.name}>
+                    <div className="col-md-12 col-lg-6  p-3 align-self-stretch" key={project.name}>
                         <Project project={project}/>                        
                     </div>
                     ))}   

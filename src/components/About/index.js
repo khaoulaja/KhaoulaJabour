@@ -5,7 +5,7 @@ import Home from '../Home';
 const About = ()=>{
     return(
       <>
-        <Home/>
+        {/* <Home/> */}
         <section id="about">
         <div className="row">
              <div className="col-sm-12 col-md-6 section-txt">
