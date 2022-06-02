@@ -21,7 +21,9 @@ const About = ()=>{
                 </div>                 
             </div> 
             <div className="col-sm-12 col-md-6 section-pic">
+              <div className='pic-wrap'>
                 <img className="pic2" src={photo} alt="my picture"/>
+              </div>
           </div>          
         </div>
       </section>

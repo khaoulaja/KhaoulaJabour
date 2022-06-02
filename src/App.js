@@ -35,10 +35,10 @@ function App() {
   return (
     <div className='container-fluid'>
       <div className='row'>
-      <div class="col-md-12 col-xl-2 sticky-bar">
+      <div className="col-md-12 col-xl-2 sticky-bar">
       <Header currentPage={currentPage} handlePageChange={handlePageChange}></Header>
       </div>
-      <div class="col-md-12 col-xl-10">
+      <div className="col-md-12 col-xl-10">
       {renderPage()}
       </div></div>
       <Footer/>

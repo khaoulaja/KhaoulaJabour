@@ -30,6 +30,7 @@ header{
   z-index: 100;
   background-color: #F1E7E8;
   padding: 0 60px;
+  transition: all .5s ease;
 }
 a{
   color: rgba(85, 37, 84, .7);
@@ -271,11 +272,11 @@ footer a i:hover{
 
 .section-pic{
   position: relative;
-  flex: 0 0 50%; 
-  min-height: 600px;
+  /* flex: 0 0 50%;  */
+  /* min-height: 600px; */
   width: 500px;
   padding: 1vw;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   text-align: center;
 }
 .section-content{
@@ -289,6 +290,7 @@ footer a i:hover{
 }
 
 .pic2{
+  position: relative;
   width:  400px;
   height: 540px;
   object-fit: cover;
@@ -297,7 +299,15 @@ footer a i:hover{
   /* box-shadow: 70px -33px rgba(211, 150, 96, 0.6); */
   /* border: 10px #f5ece3 solid; */
   z-index: 10;
-  
+}
+.section-pic::after{
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  border: 2px solid #aa4ba9;
+  left: 20px;
+  z-index: 500;
 }
 /* resume */
 .resume-section{
@@ -316,14 +326,14 @@ footer a i:hover{
   background: #c291be;
   border-radius: 10px;
   font-size: 18px;
-  animation: dribble 1s ease-in;
   white-space: nowrap;
+  animation: dribble 1s ease-in;
 }
-.skill-div{
+/* .skill-div{
   border-left: 2px solid #c291be;
   padding-top: 20px;
   
-}
+} */
 /* .skill-div:first-of-type{
   border-left: none;
   border-right: 2px solid #c291be;

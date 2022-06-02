@@ -17,7 +17,7 @@ function Contact (){
             }
         } else {
             if(!e.target.value.length){
-                setErrorMessage(`${e.target.name} is required.`)
+                setErrorMessage(`${e.target.name} is empty`)
             } else{
                 setErrorMessage('');
             }
@@ -32,7 +32,7 @@ function Contact (){
     function handleSubmit (e){
         e.preventDefault();
         console.log(formState);
-        window.open(`mailto:${formState.email}?subject=${formState.subject}&body=${formState.message}`)
+        window.open(`mailto:khaoulajabour4@gmail.com?cc=${formState.email}&subject=${formState.subject}&body=${formState.message}`)
     }
     return (
         <section className="contact-section">
@@ -40,20 +40,20 @@ function Contact (){
           <div className="contact-form">
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
-                    <label className="form-label py-1" htmlFor="email">Email address:</label>
+                    <label className="form-label py-2" htmlFor="email">Email address (cc):</label>
                     <input className="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label className="form-label py-1" htmlFor="subject">Subject:</label>
+                    <label className="form-label py-2" htmlFor="subject">Subject:</label>
                     <input className="form-control" type="text" name="subject" defaultValue={subject} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label className="form-label py-1" htmlFor="message">Message:</label>
+                    <label className="form-label py-2" htmlFor="message">Message:</label>
                     <textarea className="form-control" name="message" rows="5" defaultValue={message} onBlur ={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>
-                        <p className="mt-1 error-text">{errorMessage}.</p>
+                        <p className="mt-1 error-text">{errorMessage}!</p>
                     </div>
                 )}
                 <button className="btn hire-btn" type="submit" >Submit</button>
