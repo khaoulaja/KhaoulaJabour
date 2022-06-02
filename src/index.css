@@ -219,11 +219,15 @@ footer a i{
   border-radius: 5px;
   vertical-align: middle;
   text-decoration: none;
+  transition: all .5s ease;
 }
 footer a i:hover{
-  color: rgba(85, 37, 84, .7);
-  border-color: rgba(85, 37, 84, .7);
-  transition: 0.5s;
+  /* color: rgba(85, 37, 84, .7);
+  border-color: rgba(85, 37, 84, .7); */
+  color: #AA4BA9;
+  border-color: #AA4BA9;
+  transform: scale(1.1);
+  transition: all .5s ease;
 }
 /* About me section */
 #about{
@@ -258,9 +262,9 @@ footer a i:hover{
   font-size: 1.8rem;
   text-decoration: underline;
   text-decoration-color: #c291be;
-  padding: 0 5px;
+  /* padding: 0 5px; */
   width: fit-content;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   position: relative;
   z-index: 2;
 }
@@ -307,17 +311,25 @@ footer a i:hover{
 .sub-section:nth-of-type(2){
   background-color: rgba(85, 37, 84, .24)
 }   
+.skill {
+  color: #fff;
+  background: #c291be;
+  border-radius: 10px;
+  font-size: 18px;
+  animation: dribble 1s ease-in;
+  white-space: nowrap;
+}
 .skill-div{
   border-left: 2px solid #c291be;
   padding-top: 20px;
   
 }
-.skill-div:first-of-type{
+/* .skill-div:first-of-type{
   border-left: none;
   border-right: 2px solid #c291be;
   padding-top: 20px;
   
-}
+} */
 .school-section{
   margin: 1rem 3rem;
   padding: 0.5rem;
@@ -425,7 +437,25 @@ footer a i:hover{
     width: 90%;
   }
 }
-
+@keyframes dribble {
+  0%{
+    transform: translateY(50%);
+    opacity: 0.3;
+  }
+  90%{
+    transform: translateY(-5%);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@media screen and (max-width:1500px){
+  header{
+    padding: 0 20px 0 40px;
+  }
+}
 @media screen and (max-width:1200px){
   /* .my-pic{
     width: 350px;
@@ -491,14 +521,18 @@ footer a i:hover{
 }
 @media screen and (max-width:990px) {
   section{
-    padding: 40px;
     min-height: auto;
   }
 
   header{
-    padding: 0;
+    padding: 5px 0;
   }
-
+  .navbar{
+    padding-bottom: 0;
+  }
+  .logo{
+    margin-left: 1rem;
+  }
   .navbar-toggler,
   .navbar-toggler:focus,
   .navbar-toggler:active,
@@ -506,6 +540,7 @@ footer a i:hover{
    border: none;  
     outline: none;
     box-shadow: none;
+    margin-right: 15px;
   }
   .side-nav{
     text-align: right;
@@ -519,10 +554,23 @@ footer a i:hover{
     padding: 40px;
     height: 100%;
     z-index: 1000;
-    transform: translateX(100%);
     animation: slide-to-left .5s ease;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .navbar-collapse.show .side-nav-links{
     transition: transform .3s ease-in-out;
+  }
+  .nav-item::after{
+    left: 0;
+  }
+  .nav-item:hover::after{
+    left: 0;
+    width: 100%;
+  }
+  .current::after{
+    left:0;
+    width: 100%;
   }
   /* .show .side-nav-links{
     transform: translateX(0%);
@@ -575,12 +623,21 @@ footer a i:hover{
 @media screen and (max-width:768px) {
   section{
     min-height: fit-content;
-    padding: 20px;
   }
   .my-pic{
-    left: 2.6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 80%;
+    box-shadow: 0 0 35px 10px #c291be;
   }
-  .tape{
+  .intro-wrap{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .section-title{
+    font-size: 3rem;
+  }
+  /* .tape{
     left: 30px;
   }
   .my-name{
@@ -592,10 +649,10 @@ footer a i:hover{
     min-height: auto;
     margin: auto;
     padding: 0;
-  }
-  .section-content{
+  } */
+  /* .section-content{
     padding: 20px;
-  }
+  } */
   .pic2{
     width: 300px;
     height: 320px;
@@ -613,15 +670,19 @@ footer a i:hover{
     border-right: 2px solid #c291be;
   }
   .sub-section{
-    padding: 30px;
+    padding: 20px;
   }
   .work-section{
     padding: 40px;
+    padding-top: 130px;
+  }
+  .school-section{
+    margin: 1rem;
   }
 
 }
 @media screen and (max-width:600px) {
-  .pic-wrap{
+  /* .pic-wrap{
     width: 100%;
     margin: auto;
   }
@@ -641,18 +702,35 @@ footer a i:hover{
  }
  .my-name{
    font-size: 1.8rem;
- }
+ }*/
  .intro p{
-   font-size: 1rem;
- }
+   font-size: 1.1rem;
+ } 
  .section-title{
+  font-size: 2.5rem;
+}
+ .work-section{
+  padding: 20px;
+  padding-top: 130px;
+}
+ /* .section-title{
    font-size: 1.6rem;
+ } */
+ .card-text{
+   overflow: scroll;
  }
+ .hire-btn{
+   margin: 10px;
+ }
+  .contact-form{
+    width: 90%;
+  }
 
 }
 @media screen and (max-width:500px) {
-  .contact-form{
-    width: 90%;
+  section{
+    padding: 20px;
+    padding-top: 130px;
   }
   
 }

@@ -3,8 +3,8 @@ import {validateEmail} from "../../utils/helpers";
 
 function Contact (){
     const [errorMessage, setErrorMessage] = useState('');
-    const [formState, SetFormState] = useState({name: '', email: '', message: ''});
-    const {name, email, message} = formState;
+    const [formState, SetFormState] = useState({subject: '', email: '', message: ''});
+    const {subject, email, message} = formState;
     
     function handleChange (e) {
         if (e.target.name === 'email') {
@@ -32,6 +32,7 @@ function Contact (){
     function handleSubmit (e){
         e.preventDefault();
         console.log(formState);
+        window.open(`mailto:${formState.email}?subject=${formState.subject}&body=${formState.message}`)
     }
     return (
         <section className="contact-section">
@@ -39,16 +40,16 @@ function Contact (){
           <div className="contact-form">
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
-                    <label className="form-label" htmlFor="name">Name:</label>
-                    <input className="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    <label className="form-label py-1" htmlFor="email">Email address:</label>
+                    <input className="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label className="form-label" htmlFor="email">Email address:</label>
-                    <input className="form-control" type="email" name="email" defaultValue={email} onBlur = {handleChange} />
+                    <label className="form-label py-1" htmlFor="subject">Subject:</label>
+                    <input className="form-control" type="text" name="subject" defaultValue={subject} onBlur={handleChange} />
                 </div>
                 <div>
-                    <label className="form-label" htmlFor="message">Message:</label>
-                    <textarea className="form-control" name="message" rows="5" defaultValue={message} onBlur = {handleChange} />
+                    <label className="form-label py-1" htmlFor="message">Message:</label>
+                    <textarea className="form-control" name="message" rows="5" defaultValue={message} onBlur ={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>
