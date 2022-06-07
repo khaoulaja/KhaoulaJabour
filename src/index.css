@@ -296,7 +296,7 @@ footer a i:hover{
 }
 .pic2{
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 2/3;
   width:  100%;
   /* height: 540px; */
   object-fit: cover;
@@ -317,7 +317,6 @@ footer a i:hover{
   text-decoration: none;
   color: #aa4ba9;
   background-color: transparent;
-  
   border: 2px solid #aa4ba9;
   border-radius: 10px;
   transition: all .8s ease;
@@ -329,7 +328,7 @@ footer a i:hover{
 }
 .pic-wrap{
   width: fit-content;
-  height: fit-content;
+  /* height: fit-content; */
 }
 .pic-wrap::before{
   content: "";
