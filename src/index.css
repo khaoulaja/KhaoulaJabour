@@ -231,11 +231,11 @@ footer a i:hover{
   transition: all .5s ease;
 }
 /* About me section */
-#about{
-  /* background-image: url('./assets/bg/about-bg.png'); */
+/* #about{
+  /* background-image: url('./assets/bg/about-bg.png'); 
   background-size: cover;
   background-position: center;
-}
+} */
 .section-title{
   
   margin: auto;
@@ -274,40 +274,71 @@ footer a i:hover{
   position: relative;
   /* flex: 0 0 50%;  */
   /* min-height: 600px; */
-  width: 500px;
-  padding: 1vw;
+  /* width: 500px;
+  padding: 1vw; */
   /* vertical-align: middle; */
   text-align: center;
 }
 .section-content{
   flex: 0 0 50%;
-  min-height: 600px;
-  padding: 50px;
-  text-align: center;
+  /* min-height: 600px; */
+  /* padding: 50px; */
+  text-align: left;
 }
 .section-content p{
   font-size: 1.1rem;
 }
-
+.about-intro{
+    display: block;
+    font-size: 24px;
+    color: #aa4ba9;
+    font-weight: 500;
+}
 .pic2{
   position: relative;
-  width:  400px;
-  height: 540px;
+  aspect-ratio: 3/4;
+  width:  100%;
+  /* height: 540px; */
   object-fit: cover;
   object-position: center;
-  margin-top: 7.2vw;
+  /* margin-top: 7.2vw; */
   /* box-shadow: 70px -33px rgba(211, 150, 96, 0.6); */
   /* border: 10px #f5ece3 solid; */
   z-index: 10;
 }
-.section-pic::after{
+.info{
+  font-size: 18px;
+  /* color: #aa4ba9; */
+}
+.download-btn{
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #aa4ba9;
+  background-color: transparent;
+  
+  border: 2px solid #aa4ba9;
+  border-radius: 10px;
+  transition: all .8s ease;
+}
+.download-btn:hover{
+  color: #fff;
+  background-color: #aa4ba9;
+  transition: all 1s ease;
+}
+.pic-wrap{
+  width: fit-content;
+  height: fit-content;
+}
+.pic-wrap::before{
   content: "";
   position: absolute;
-  width: 500px;
-  height: 800px;
-  border: 2px solid #aa4ba9;
-  left: 20px;
-  z-index: 500;
+  width: 95%;
+  height: 100%;
+  border: 10px solid rgba(170, 75, 169, .5);
+  top: 20px;
+  left: 30px;
 }
 /* resume */
 .resume-section{
@@ -603,9 +634,9 @@ footer a i:hover{
     padding: 20px;
     min-height: auto;
   } */
-  .tape{
+  /* .tape{
     bottom: 50px;
-  }
+  } */
   /* .my-name{
     font-size: 2.4rem;
   } */
@@ -615,12 +646,12 @@ footer a i:hover{
   /* .intro p{
     font-size: 20px;
   } */
-  .section-pic{
+  /* .section-pic{
     padding: 10px;
   }
   .pic2{
     width: 300px;
-  }
+  } */
   .section-content p{
     font-size: 1rem;
   }
@@ -663,12 +694,12 @@ footer a i:hover{
   /* .section-content{
     padding: 20px;
   } */
-  .pic2{
+  /* .pic2{
     width: 300px;
     height: 320px;
     margin-top: auto;
     box-shadow: 0 0 60px rgba(211, 150, 96, 0.8);
-  }
+  } */
   .skill-div .row .col-6{
     width: fit-content;
     margin: auto;

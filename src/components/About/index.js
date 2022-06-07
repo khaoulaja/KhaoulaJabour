@@ -7,26 +7,41 @@ const About = ()=>{
       <>
         {/* <Home/> */}
         <section id="about">
-        <div className="row">
-             <div className="col-sm-12 col-md-6 section-txt">
-                <div className="section-content">
-                    <h2 className="section-title">About me</h2>
-                    <p>
-                       I have been obsessed with computers since I was a little girl. While other kids were playing with their toys, I was always looking for anything that looks like a keyboard so I can pretend to be a computer nerd. 
-                      <br/><br/>  After I got my bachelor’s degree in Computer Sience from the Superior School of Technology in Meknes, Morocco, I went on to complete multiple internships at some of the largest companies in the country. I also volunteered at various nonprofit institutions, and I taught other girls the basics of coding. 
-                      <br/><br/> Before coming to the USA, I was working as an Operations Support Technician at the Exela Technologies branch in Fes, Morocco, where I was able to implement my problem-solving qualities and take the initiative in developing solutions to improve productivity. 
-                      <br/> After I moved to the USA, I decided to join a web development bootcamp at UNC Chapel Hill so I can widen my knowledge in the field and learn more about some of the most used programming languages in the world.
-                     <br/><br/> When I’m not coding, I’m probably hanging out with my husband or my girlfriends, trying a new recipe or out shopping. I also like to browse YouTube for any web development related videos and tutorials.   
-                  </p>
-                </div>                 
-            </div> 
-            <div className="col-sm-12 col-md-6 section-pic">
-              <div className='pic-wrap'>
-                <img className="pic2" src={photo} alt="my picture"/>
-              </div>
-          </div>          
-        </div>
-      </section>
+          <h2 className="section-title">About me</h2>
+          <div className="row m-5">
+              <div className="col-md-12 col-lg-8 section-txt">
+                  <div className="section-content">
+                    
+                      <div>
+                        <p>
+                        <span className='about-intro'>Hi! My name is Khaoula Jabour. </span>
+                        I'm a Full stack web developer with strong organizational and analytical skills. Also known as an innovative problem solver passionate about developing web applications with a focus on responsive web design.</p>
+                        <p> 
+                        I recently earned a certificate in full stack web development from the UNC Chapel Hill coding bootcamp, completing multiple group projects along the way, including one that allowed me to use React and Node.js in tandem to create a single-page application that helps users keep track of their car records.</p>
+                        <p>
+                        These projects combined with my two years of experience including Operations Support and multiple internships allowed me to work in a teamwork environment and was an opportunity to showcase my skills.
+
+                        </p>
+                      </div>
+                      <hr/>
+                      <div>
+                        <div className='info'><i class="fa-solid fa-location-dot"></i> Morrisville, NC</div>
+                        <div className='info'><i class="fa-solid fa-phone"></i> 919-717-9368</div>
+                        <div className='info'><i class="fa-solid fa-envelope"></i> khaoulajabour4@gmail.com</div>
+                        <div className='mt-4'><a href="resume/resume.pdf" download="khaoula-resume" className='download-btn'>
+                          <i class="fa-solid fa-download"></i> Download My Resume</a></div>
+                      </div>
+
+                    
+                  </div>                 
+              </div> 
+              <div className="col-md-12 col-lg-4 section-pic">
+                <div className='pic-wrap'>
+                  <img className="pic2" src={photo} alt="my picture"/>
+                </div>
+            </div>          
+          </div>
+        </section>
       </>
     )
 }
