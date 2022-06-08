@@ -22,7 +22,7 @@ In this portfolio, you will:
 * Responsive Design
 
 ## Website
-https://khaoulaja.github.io/react-portfolio
+https://khaoulaja.github.io/KhaoulaJabour/
 
 ## Contribution
 Made with ❤️ by **Khaoula Jabour**
