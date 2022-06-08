@@ -40,6 +40,9 @@ a:hover{
   color: #552554;
   transition: 0.5s;
 }
+.fw-semibold{
+  font-weight: 500;
+}
 body div .container
 .navbar-toggler:focus{
   box-shadow: none;
@@ -181,7 +184,7 @@ section{
   animation: ascending-load 1000ms;
   
 }
-.hire-btn{
+/* .hire-btn{
   margin: 15px;
   padding: 6px 10px;
   font-size: 20px;
@@ -193,11 +196,11 @@ section{
   transition: .3s ease-out;
 }
 .hire-btn:hover{
-  /* background-color: #c291be; */
+  /* background-color: #c291be; 
   color: #fff;
   transform: translateY(-15%);
   transition: all .3s ease-in;
-}
+} */
 
 /* footer */
 .foot-top{
@@ -287,12 +290,28 @@ footer a i:hover{
 }
 .section-content p{
   font-size: 1.1rem;
+  animation: ascending-load 1s ease-out;
 }
 .about-intro{
     display: block;
     font-size: 24px;
     color: #aa4ba9;
     font-weight: 500;
+}
+.pic-wrap{
+  width: fit-content;
+
+  /* height: fit-content; */
+}
+.pic-wrap::before{
+  content: "";
+  position: absolute;
+  aspect-ratio: 2/3;
+  width: 95%;
+  /* height: 100%; */
+  border: 10px solid rgba(170, 75, 169, .5);
+  top: 20px;
+  left: 30px;
 }
 .pic2{
   position: relative;
@@ -308,38 +327,37 @@ footer a i:hover{
 }
 .info{
   font-size: 18px;
-  /* color: #aa4ba9; */
+  opacity: 0;
+  animation: ascending-load 1s ease-out .1s;
+  animation-fill-mode: forwards;
 }
-.download-btn{
-  padding: 10px 20px;
+.hire-btn{
+  padding: 7px 20px;
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   text-decoration: none;
   color: #aa4ba9;
   background-color: transparent;
   border: 2px solid #aa4ba9;
   border-radius: 10px;
+  opacity: 0;
+  animation: ascending-load 1s ease-out .1s;
+  animation-fill-mode: forwards;
   transition: all .8s ease;
 }
-.download-btn:hover{
+.hire-btn:hover{
   color: #fff;
   background-color: #aa4ba9;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
-.pic-wrap{
-  width: fit-content;
-  /* height: fit-content; */
+.hire-btn:focus, 
+.hire-btn:focus-visible, 
+.hire-btn:focus-within{
+  outline: none;
+  box-shadow: none;
 }
-.pic-wrap::before{
-  content: "";
-  position: absolute;
-  aspect-ratio: 2/3;
-  width: 95%;
-  /* height: 100%; */
-  border: 10px solid rgba(170, 75, 169, .5);
-  top: 20px;
-  left: 30px;
-}
+
 /* resume */
 .resume-section{
   background-color: #F1E7E8;
@@ -376,6 +394,7 @@ footer a i:hover{
   padding: 0.5rem;
   border-left: 2px dashed rgba(0, 0, 0, 0.075);
   position: relative;
+  animation: ascending-load 1s ease;
 }
 .school-section::after{
   content: "";
@@ -408,15 +427,21 @@ footer a i:hover{
 /* .portfolio-section{
   /* background-image: url('./assets/bg/portfolio-bg.png'); 
 } */
+.card-wrap{
+  animation: fadeout-load 1500ms ease-out;
+}
+
 .card-img-top{
   height: 210px;
   object-fit: cover;
 }
 .card-text{
-  height: 115px;
+  height: 100px;
   /* overflow:scroll; */
 }
-
+.card-tech{
+  height: 40px;
+}
 @keyframes slide-to-right {
   0%{
     
@@ -613,6 +638,12 @@ footer a i:hover{
     left:0;
     width: 100%;
   }
+  .pic2{
+    display: none;
+  }
+  .pic-wrap::before{
+    content: none;
+  }
   /* .show .side-nav-links{
     transform: translateX(0%);
     animation: slide-to-right .5s ease;
@@ -677,6 +708,9 @@ footer a i:hover{
   }
   .section-title{
     font-size: 3rem;
+  }
+  #about{
+    padding: 20px;
   }
   /* .tape{
     left: 30px;
@@ -760,6 +794,9 @@ footer a i:hover{
  .card-text{
    overflow: scroll;
  }
+ .card-tech{
+   height: auto;
+ }
  .hire-btn{
    margin: 10px;
  }
@@ -773,5 +810,7 @@ footer a i:hover{
     padding: 20px;
     padding-top: 130px;
   }
-  
+  #about{
+    padding:0;
+  }
 }

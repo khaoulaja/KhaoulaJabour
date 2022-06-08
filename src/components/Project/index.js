@@ -12,8 +12,9 @@ const Project =(props)=>{
                 <div className="card-body">
                     <h5 className="card-title">{project.name}</h5>
                     <p className="card-text">{project.description}</p>
-                    <a href={project.link} target="_blank" className="btn hire-btn">App link</a>
-                    <a href={project.repo} target="_blank" className="btn hire-btn">Github repo</a>
+                    <p className="card-tech"><span className="fw-semibold">Technologies: </span>{project.tech.join(", ")}.</p>
+                    <a href={project.link} target="_blank" className="btn hire-btn me-2"><i class="fa-solid fa-link"></i> App link</a>
+                    <a href={project.repo} target="_blank" className="btn hire-btn"><i class="fa-brands fa-github"></i> Github repo</a>
                 </div>
             </div>
         </div>

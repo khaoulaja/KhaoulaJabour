@@ -6,6 +6,7 @@ const projects=[
         name: "CarDash",
         pic: "car-dash",
         description: "CarDash is an application that allows the users to keep track of all repairs and services needed for their vehicles.",
+        tech:["React", "TailwindCss", "Node", "Express", "MongoDB", "GraphQL"],
         link: "https://limitless-reaches-44145.herokuapp.com/",
         repo: "https://github.com/khaoulaja/car-dash/"
     },
@@ -13,6 +14,7 @@ const projects=[
         name: "Game Corner",
         pic: "game-corner",
         description: "It allows the user to keep track of its collection of games. The user can sign up to start building their list of games (favorite, hated, want to buy ...).",
+        tech:["Javascript", "Node", "Express", "MySQL", "Handlebars", "Bootstrap"],
         link: "https://afternoon-reef-79835.herokuapp.com/",
         repo: "https://github.com/kerbunker/game-collection"
     },
@@ -20,6 +22,7 @@ const projects=[
         name: "Travel Buddy",
         pic: "travel-buddy",
         description: "It allows users to interact with selected countries and gain general information about it. It also has the translation of the most used phrases, as well as a gallery of the most famous cities and sight-seeings.",
+        tech:["HTML", "CSS", "Foundation", "JQuery", "REST Countries API"],
         link: "https://khaoulaja.github.io/Travel-Buddy/",
         repo: "https://github.com/khaoulaja/Travel-Buddy"
     },
@@ -27,6 +30,7 @@ const projects=[
         name: "Weather Dashboard",
         pic: "weather-dashboard",
         description: "It allows the user to search any city in the world and get the current weather as well as 5-day forcast. The user will be able to see the previously searched cities as well.",
+        tech:["Bootstrap","Javascript","JQuery","Moment.js","Openweathermap api"],
         link: "https://khaoulaja.github.io/weather-dashboard/",
         repo: "https://github.com/khaoulaja/weather-dashboard"
     },
@@ -34,6 +38,7 @@ const projects=[
         name: "Tech Park",
         pic: "tech-park",
         description: "It's a CMS-style blog site similar to a Wordpress site, where developers can publish their articles, blog posts and comment on other developers posts as well.",
+        tech:["Node", "Express", "MySQL", "Handlebars","Bcrypt", "Bootstrap"],
         link: "https://tech-park-99.herokuapp.com/login",
         repo: "https://github.com/khaoulaja/TechPark"
     },
@@ -41,6 +46,7 @@ const projects=[
         name: "Code Quiz",
         pic: "code-quiz",
         description: "It's a website where you can take a timed quiz on JavaScript fundamentals and store your high scores so that you can gauge your progress compared to your peers.",
+        tech:["HTML", "Css", "Javascript"],
         link: "https://khaoulaja.github.io/code-quiz/",
         repo: "https://github.com/khaoulaja/code-quiz"
     }

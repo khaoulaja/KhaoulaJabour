@@ -40,7 +40,8 @@ function App() {
       </div>
       <div className="col-md-12 col-xl-10">
       {renderPage()}
-      </div></div>
+      </div>
+      </div>
       <Footer/>
 
     </div>
