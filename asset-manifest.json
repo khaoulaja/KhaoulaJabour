@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KhaoulaJabour/static/css/main.b2bfdd8e.css",
-    "main.js": "/KhaoulaJabour/static/js/main.201facf8.js",
+    "main.css": "/KhaoulaJabour/static/css/main.ef2d13a6.css",
+    "main.js": "/KhaoulaJabour/static/js/main.a35e6ed2.js",
     "static/js/787.a2cb61a6.chunk.js": "/KhaoulaJabour/static/js/787.a2cb61a6.chunk.js",
     "static/media/car-dash.gif": "/KhaoulaJabour/static/media/car-dash.71cdbf4b25f87887a661.gif",
     "static/media/travel-buddy.gif": "/KhaoulaJabour/static/media/travel-buddy.2e94cf9af8bb2fef0fe4.gif",
@@ -15,12 +15,12 @@
     "static/media/pic2.jpg": "/KhaoulaJabour/static/media/pic2.3d2d9e3ce4fd3805d239.jpg",
     "static/media/logo.png": "/KhaoulaJabour/static/media/logo.025c15b626a04d12d125.png",
     "index.html": "/KhaoulaJabour/index.html",
-    "main.b2bfdd8e.css.map": "/KhaoulaJabour/static/css/main.b2bfdd8e.css.map",
-    "main.201facf8.js.map": "/KhaoulaJabour/static/js/main.201facf8.js.map",
+    "main.ef2d13a6.css.map": "/KhaoulaJabour/static/css/main.ef2d13a6.css.map",
+    "main.a35e6ed2.js.map": "/KhaoulaJabour/static/js/main.a35e6ed2.js.map",
     "787.a2cb61a6.chunk.js.map": "/KhaoulaJabour/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2bfdd8e.css",
-    "static/js/main.201facf8.js"
+    "static/css/main.ef2d13a6.css",
+    "static/js/main.a35e6ed2.js"
   ]
 }
